@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Collector - Add Recipe</title>
+</head>
+<body>
+
+    <!--#2 Page 3 of 3-->
+    <h1>My Recipe Collector - Add New Recipe</a></h1>
+
+    <!--#5 Using same image for consistency between pages, so probably doesn't count here-->
+    <img src="https://thumbs.dreamstime.com/b/food-panorama-copy-space-many-various-products-shot-top-dark-blue-wooden-background-flat-lay-place-text-200856024.jpg"/>
+    
+    <!--#2 Links between 3 pages-->
+    <pre>
+        
+        <a href="index.html">Home</a>           <a href="search.html">Search</a>          <a href="add.html">Add Recipe</a>
+    </pre>
+    
+    <!--#7 Form Requirment. Second form not required but here.-->
+    <!--Form doesn't actually do anything yet. Intended for adding to collection of recipes.-->
+    <form> 
+
+        <!--#3 Second header size again-->
+        <h2>Add recipe to collection</h2>
+
+        <!--#3 Third header size. Not required but here anyway.-->
+        <h4>
+            <p>Use this form to add metadata and upload recipe pdf or image</p>
+        </h4>
+
+        <pre>
+
+    <label for="recipeTitle">Recipe Title</label>
+    <input type="text" name="recipeTitle" size="50" />
+
+    <label for="urlSource">Web Address</label>
+    <input type="text" name="urlSource" size="50" />
+
+    <label for="fileUpload">PDF or Image Upload</label>
+    <input type="file" accept=".pdf, .jpg, .png, .tif" />
+
+    <label for="keyWords">Keywords</label>
+    <textarea name="keyWords" cols="50" rows="5" placeholder="Comma delimited keywords here."></textarea>
+
+    <input type="submit" />
+
+        </pre>
+
+    </form>
+
+</body>
+</html>
