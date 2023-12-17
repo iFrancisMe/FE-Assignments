@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search for Recipes</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!--#2 Page 2 of 3-->
-    <h1>My Recipe Collector - Recipe Search</a></h1>
+    <div class="banner">
+        <header>
+            <!--#2 Page 2 of 3-->
+            <h1>My Recipe Collector - Recipe Search</a></h1>
+        </header>
+        <!--#5 Using same image for consistency between pages, so probably doesn't count here-->
+        <img src="https://thumbs.dreamstime.com/b/food-panorama-copy-space-many-various-products-shot-top-dark-blue-wooden-background-flat-lay-place-text-200856024.jpg"/>
+    </div>
 
-    <!--#5 Using same image for consistency between pages, so probably doesn't count here-->
-    <img src="https://thumbs.dreamstime.com/b/food-panorama-copy-space-many-various-products-shot-top-dark-blue-wooden-background-flat-lay-place-text-200856024.jpg"/>
-    
-    <!--#2 Links between 3 pages-->
-    <pre>
+    <div class="navigation">
         
-        <a href="index.html">Home</a>           <a href="search.html">Search</a>          <a href="add.html">Add Recipe</a>
-    </pre>
+        <!--#2 Links between 3 pages-->
+        <navigation>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="add.html">Add Recipe</a>
+        </navigation>
+    </div>    
 
     <search> <!--Semantic Tag wrapping form-->
 
@@ -38,9 +47,9 @@
     <br/>
 
     <!--#6 Table. Represents search results from data source.-->
-    <table>
+    <table id="results">
         <tr>
-            <th>Recipes Found</th>
+            <th><h3>Recipes Found</h3></th>
         </tr>
         <tr>
             <td><a href="">Buttery Pie Crust</a></td>

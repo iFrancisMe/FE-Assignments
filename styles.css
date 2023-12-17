@@ -1,0 +1,126 @@
+/* custom properties globaly accessable */
+:root {
+    --main-fg-color: red;
+    --main-fg-accent-color: rgba( 0, 0, 230, 0.10);
+    --main-list-color: rgba(61, 78, 211, 0.651);
+    --secondary-fg-color: gray;
+    --object-bg-color: rgba(239, 199, 236, 0.798);
+}
+
+/* Default styling for body */
+body {
+    margin: auto;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--main-fg-color);
+}
+
+/* Targeting all h1 and h2 headers */
+h1,h2 {
+    text-wrap: nowrap; /* Prevent text wrapping */
+    text-shadow: rgb(134, 132, 159) 1px 0 1px;   
+}
+
+/* Targeting all h3 and h4 headers */
+h3,h4 { /* Used for "Add Recipe" form heading and search results heading*/
+    color: var(--secondary-fg-color);
+    text-shadow: var(--main-fg-accent-color) 1px 0 2px;
+}
+
+/* Targeting all unordered lists (Used for 'Featured Favorites') */
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    color: var(--main-list-color);
+    font-weight: bold;
+}
+
+/* Targeting all list items */
+li {
+    position: relative;
+    background-color: var(--object-bg-color);
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+
+    /* Targeting all images within list items elements */
+    img {
+        width: 340px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+}
+
+/* Styling for all anchors */
+a {
+    text-decoration: none; /* Remove underlining */
+    color: inherit; /* Inherit parent color */
+}
+
+.navigation {
+
+    margin-top: 20px;  /* Set white spacing for top */
+    margin-bottom: 50px; /* white space for bottom */
+    width: max-content;  /* for navigation bar to width of document */
+    flex-flow: nowrap; /* Prevent wrapping of elements */
+
+    /* Targeting only children anchor elements within navigation class */
+    a {
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: 15px;
+
+        /* Make links look like buttons */
+        border: 2px solid var(--main-fg-accent-color);
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+}
+
+/* Targetting banner portion of document including title header and image */
+.banner {
+    
+    /* title header */
+    h1 {
+        text-align: left;
+    }
+
+    /* banner image */
+    img {
+        border: 2px;
+        border-radius: 10px;
+        margin-right: 10%;
+    }
+}
+
+/* Formatting for forms appearance */
+form {
+    background-color: var(--object-bg-color);
+    border-radius: 5px;
+    width: 510px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    border-color: black;
+}
+
+/* Formatting common to all input elements */ 
+input {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Selector for table id */
+#results {
+    background-color: antiquewhite;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 540px;
+    text-align: left;
+}
